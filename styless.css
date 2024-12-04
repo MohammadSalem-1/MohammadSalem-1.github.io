@@ -1,10 +1,9 @@
-/* ÊäÓíÞ ÚÇã */
+/* تنسيق عام */
 <style>
     body {
         font-family: 'Cairo', sans-serif;
     }
 </style>
-
 
 body {
     font-family: Arial, sans-serif;
@@ -14,7 +13,7 @@ body {
     color: #333333;
 }
 
-/* ÊäÓíÞ ááÜ header */
+/* تنسيق للـ header */
 header {
     background: #1a2a44;
     padding: 20px 0;
@@ -48,7 +47,7 @@ header .logo img {
     margin-bottom: 20px;
 }
 
-/* ÊäÓíÞ ááÜ sections */
+/* تنسيق للـ sections */
 section {
     padding: 20px;
     margin: 10px;
@@ -61,7 +60,7 @@ section h2 {
     color: #1a2a44;
 }
 
-/* ÊÎÕíÕ ãÙåÑ ÞÓã ÇáÝÑæÚ */
+/* تخصيص مظهر قسم الفروع */
 #branches {
     background-color: #f4f4f4;
     padding: 20px;
@@ -90,7 +89,7 @@ section h2 {
 }
 
 
-/* ÊäÓíÞ ááÜ footer */
+/* تنسيق للـ footer */
 footer {
     text-align: center;
     background-color: #1a2a44;
@@ -115,7 +114,7 @@ footer .designer {
     margin-top: 5px;
 }
 
-/* ÊäÓíÞ ÇáÑæÇÈØ */
+/* تنسيق الروابط */
 a {
     color: #A56ABD;
     text-decoration: none;
@@ -125,7 +124,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ÊäÓíÞ ÃÒÑÇÑ ÇááÛÉ */
+/* تنسيق أزرار اللغة */
 .lang-btn {
     color: #f39c12;
     font-size: 16px;
