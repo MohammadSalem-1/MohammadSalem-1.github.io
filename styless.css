@@ -1,133 +1,100 @@
-/* تنسيق عام */
-<style>
-    body {
-        font-family: 'Cairo', sans-serif;
-    }
-</style>
-
-body {
-    font-family: Arial, sans-serif;
+/* عام - Reset للـ margins و padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif; /* خط يدعم العربية */
     background-color: #f4f4f4;
-    color: #333333;
+    color: #333;
+    line-height: 1.6;
 }
 
-/* تنسيق للـ header */
 header {
-    background: #1a2a44;
-    padding: 20px 0;
-    color: white;
+    background-color: #1a1a1a;
+    padding: 20px;
+    color: #fff;
     text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header nav ul li a, header nav ul li button {
-    text-decoration: none;
-    color: #f39c12;
-    font-weight: bold;
-    font-size: 18px;
-    background: none;
-    border: none;
-    cursor: pointer;
 }
 
 header .logo img {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 20px;
+    width: 150px;
+    margin-bottom: 10px;
 }
 
-/* تنسيق للـ sections */
-section {
-    padding: 20px;
-    margin: 10px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-section h2 {
-    color: #1a2a44;
-}
-
-/* تخصيص مظهر قسم الفروع */
-#branches {
-    background-color: #f4f4f4;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 8px;
-}
-
-.branches-heading {
-    font-size: 24px;
-    color: #003366;
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.branches-list {
+nav ul {
     list-style-type: none;
     padding: 0;
 }
 
-.branches-list li {
-    font-size: 18px;
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a, nav ul li button {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+nav ul li button {
+    background-color: #1a1a1a;
+}
+
+section {
+    padding: 30px;
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-heading, .contact-heading {
+    font-size: 24px;
     color: #333;
+}
+
+.about-text, .contact-text {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+ul li {
     margin: 10px 0;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
-
-/* تنسيق للـ footer */
 footer {
+    background-color: #1a1a1a;
+    color: #fff;
     text-align: center;
-    background-color: #1a2a44;
-    color: white;
-    padding: 10px 0;
-}
-
-footer .footer-content {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer p {
-    font-size: 1em;
-    margin: 5px 0;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 footer .designer {
-    font-size: 0.8em;
-    margin-top: 5px;
+    font-size: 14px;
 }
 
-/* تنسيق الروابط */
-a {
-    color: #A56ABD;
-    text-decoration: none;
-}
+/* الاستجابة (Responsive) */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
-
-/* تنسيق أزرار اللغة */
-.lang-btn {
-    color: #f39c12;
-    font-size: 16px;
-    margin-left: 10px;
-    cursor: pointer;
+    header, section, footer {
+        padding: 15px;
+    }
 }
