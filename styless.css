@@ -1,4 +1,11 @@
-/*  ‰”Ìﬁ ⁄«„ */
+/* √ä√§√ì√≠√û √ö√á√£ */
+<style>
+    body {
+        font-family: 'Cairo', sans-serif;
+    }
+</style>
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +14,7 @@ body {
     color: #333333;
 }
 
-/*  ‰”Ìﬁ ··‹ header */
+/* √ä√§√ì√≠√û √°√°√ú header */
 header {
     background: #1a2a44;
     padding: 20px 0;
@@ -41,7 +48,7 @@ header .logo img {
     margin-bottom: 20px;
 }
 
-/*  ‰”Ìﬁ ··‹ sections */
+/* √ä√§√ì√≠√û √°√°√ú sections */
 section {
     padding: 20px;
     margin: 10px;
@@ -54,7 +61,7 @@ section h2 {
     color: #1a2a44;
 }
 
-/*  Œ’Ì’ „ŸÂ— ﬁ”„ «·›—Ê⁄ */
+/* √ä√é√ï√≠√ï √£√ô√•√ë √û√ì√£ √á√°√ù√ë√¶√ö */
 #branches {
     background-color: #f4f4f4;
     padding: 20px;
@@ -83,7 +90,7 @@ section h2 {
 }
 
 
-/*  ‰”Ìﬁ ··‹ footer */
+/* √ä√§√ì√≠√û √°√°√ú footer */
 footer {
     text-align: center;
     background-color: #1a2a44;
@@ -108,7 +115,7 @@ footer .designer {
     margin-top: 5px;
 }
 
-/*  ‰”Ìﬁ «·—Ê«»ÿ */
+/* √ä√§√ì√≠√û √á√°√ë√¶√á√à√ò */
 a {
     color: #A56ABD;
     text-decoration: none;
@@ -118,7 +125,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/*  ‰”Ìﬁ √“—«— «··€… */
+/* √ä√§√ì√≠√û √É√í√ë√á√ë √á√°√°√õ√â */
 .lang-btn {
     color: #f39c12;
     font-size: 16px;
