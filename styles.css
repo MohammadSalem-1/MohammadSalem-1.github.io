@@ -1,4 +1,4 @@
-/* ÊäÓíŞ ÚÇã */
+/* ØªÙ†Ø³ÙŠÙ‚ Ø¹Ø§Ù… */
 body {
     font-family: 'Cairo', sans-serif;
     margin: 0;
@@ -7,7 +7,7 @@ body {
     color: #333333;
 }
 
-/* ÊäÓíŞ ááÜ header */
+/* ØªÙ†Ø³ÙŠÙ‚ Ù„Ù„Ù€ header */
 header {
     background: #1a2a44;
     padding: 20px 0;
@@ -41,7 +41,7 @@ header .logo img {
     margin-bottom: 20px;
 }
 
-/* ÊäÓíŞ ááÜ sections */
+/* ØªÙ†Ø³ÙŠÙ‚ Ù„Ù„Ù€ sections */
 section {
     padding: 20px;
     margin: 10px;
@@ -54,7 +54,7 @@ section h2 {
     color: #1a2a44;
 }
 
-/* ÊÎÕíÕ ãÙåÑ ŞÓã ÇáİÑæÚ */
+/* ØªØ®ØµÙŠØµ Ù…Ø¸Ù‡Ø± Ù‚Ø³Ù… Ø§Ù„ÙØ±ÙˆØ¹ */
 #branches {
     background-color: #f4f4f4;
     padding: 20px;
@@ -83,7 +83,7 @@ section h2 {
 }
 
 
-/* ÊäÓíŞ ááÜ footer */
+/* ØªÙ†Ø³ÙŠÙ‚ Ù„Ù„Ù€ footer */
 footer {
     text-align: center;
     background-color: #1a2a44;
@@ -108,7 +108,7 @@ footer .designer {
     margin-top: 5px;
 }
 
-/* ÊäÓíŞ ÇáÑæÇÈØ */
+/* ØªÙ†Ø³ÙŠÙ‚ Ø§Ù„Ø±ÙˆØ§Ø¨Ø· */
 a {
     color: #A56ABD;
     text-decoration: none;
@@ -118,10 +118,30 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ÊäÓíŞ ÃÒÑÇÑ ÇááÛÉ */
+/* ØªÙ†Ø³ÙŠÙ‚ Ø£Ø²Ø±Ø§Ø± Ø§Ù„Ù„ØºØ© */
 .lang-btn {
     color: #f39c12;
     font-size: 16px;
     margin-left: 10px;
     cursor: pointer;
 }
+
+.gallery-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
