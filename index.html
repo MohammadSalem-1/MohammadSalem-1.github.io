@@ -25,6 +25,7 @@
         <nav>
             <ul>
                 <li><a href="#about" class="about-link">نبذة عن الأكاديمية</a></li>
+                <li><a href="gallery.html" class="gallery-link">معرض الصور</a></li> 
                 <li><a href="#contact" class="contact-link">التواصل</a></li>
                 <!-- أزرار اللغة -->
                 <li><button class="lang-btn" onclick="changeLanguage('ar')">عربي</button></li>
@@ -100,6 +101,7 @@ If you seek to join the FIRST ACADEMY family, you are joining a community of foo
             if (lang === 'en') {
                 document.querySelector('html').setAttribute('lang', 'en');
                 document.querySelector('.about-heading').textContent = 'About the Academy';
+                    document.querySelector('.gallery-link').textContent = 'Gallery';
                 document.querySelector('.contact-heading').textContent = 'Contact';
                 document.querySelector('.contact-text').textContent = 'To contact FIRST ACADEMY:';
                 document.querySelector('.about-link').textContent = 'About the Academy';
@@ -111,6 +113,7 @@ If you seek to join the FIRST ACADEMY family, you are joining a community of foo
             } else {
                 document.querySelector('html').setAttribute('lang', 'ar');
                 document.querySelector('.about-heading').textContent = 'نبذة عن الأكاديمية';
+                 document.querySelector('.gallery-link').textContent = 'معرض الصور';
                 document.querySelector('.contact-heading').textContent = 'التواصل';
                 document.querySelector('.contact-text').textContent = 'للتواصل مع أكاديمية FIRST ACADEMY:';
                 document.querySelector('.about-link').textContent = 'نبذة عن الأكاديمية';
