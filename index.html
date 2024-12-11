@@ -19,20 +19,20 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="https://assets.onecompiler.app/42ydxf8da/42ydhh55f/111.jpg" alt="FIRST ACADEMY Logo">
-        </div>
-        <nav>
-           <ul>
-               <li><a href="#about" class="about-link">نبذة عن الأكاديمية</a></li>
-               <li><a href="gallery.html" class="gallery-link">معرض الصور</a></li>
-               <li><a href="#contact" class="contact-link">التواصل</a></li>
-               <li><button class="lang-btn" onclick="changeLanguage('ar')">عربي</button></li>
-               <li><button class="lang-btn" onclick="changeLanguage('en')">English</button></li>
-          </ul>
-
-        </nav>
-    </header>
+    <div class="logo">
+        <img src="https://assets.onecompiler.app/42ydxf8da/42ydhh55f/111.jpg" alt="FIRST ACADEMY Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#about" class="about-link">نبذة عن الأكاديمية</a></li>
+            <li><a href="gallery.html" class="gallery-link">معرض الصور</a></li>
+            <li><a href="success-stories.html" class="success-stories-link">قصص النجاح</a></li> <!-- إضافة الرابط هنا -->
+            <li><a href="#contact" class="contact-link">التواصل</a></li>
+            <li><button class="lang-btn" onclick="changeLanguage('ar')">عربي</button></li>
+            <li><button class="lang-btn" onclick="changeLanguage('en')">English</button></li>
+        </ul>
+    </nav>
+</header>
 
     <!-- نبذة عن الأكاديمية -->
     <section id="about">
@@ -93,35 +93,38 @@ If you seek to join the FIRST ACADEMY family, you are joining a community of foo
         </div>
     </footer>
 
-    <script>
-        // دالة لتغيير النصوص بناءً على اللغة المحددة
-        function changeLanguage(lang) {
-            if (lang === 'en') {
-                document.querySelector('html').setAttribute('lang', 'en');
-                document.querySelector('.about-heading').textContent = 'About the Academy';
-                document.querySelector('.gallery-link').textContent = 'Gallery';
-                document.querySelector('.contact-heading').textContent = 'Contact';
-                document.querySelector('.contact-text').textContent = 'To contact FIRST ACADEMY:';
-                document.querySelector('.about-link').textContent = 'About the Academy';
-                document.querySelector('.contact-link').textContent = 'Contact';
+    
+<script>
+    // دالة لتغيير النصوص بناءً على اللغة المحددة
+    function changeLanguage(lang) {
+        if (lang === 'en') {
+            document.querySelector('html').setAttribute('lang', 'en');
+            document.querySelector('.about-heading').textContent = 'About the Academy';
+            document.querySelector('.gallery-link').textContent = 'Gallery';
+            document.querySelector('.success-stories-link').textContent = 'Success Stories'; // تغيير النص في الرابط
+            document.querySelector('.contact-heading').textContent = 'Contact';
+            document.querySelector('.contact-text').textContent = 'To contact FIRST ACADEMY:';
+            document.querySelector('.about-link').textContent = 'About the Academy';
+            document.querySelector('.contact-link').textContent = 'Contact';
 
-                // إخفاء النص العربي واظهار النص الإنجليزي
-                document.getElementById("about-text-ar").style.display = "none";
-                document.getElementById("about-text-en").style.display = "block";
-            } else {
-                document.querySelector('html').setAttribute('lang', 'ar');
-                document.querySelector('.about-heading').textContent = 'نبذة عن الأكاديمية';
-                document.querySelector('.gallery-link').textContent = 'معرض الصور';
-                document.querySelector('.contact-heading').textContent = 'التواصل';
-                document.querySelector('.contact-text').textContent = 'للتواصل مع أكاديمية FIRST ACADEMY:';
-                document.querySelector('.about-link').textContent = 'نبذة عن الأكاديمية';
-                document.querySelector('.contact-link').textContent = 'التواصل';
+            // إخفاء النص العربي واظهار النص الإنجليزي
+            document.getElementById("about-text-ar").style.display = "none";
+            document.getElementById("about-text-en").style.display = "block";
+        } else {
+            document.querySelector('html').setAttribute('lang', 'ar');
+            document.querySelector('.about-heading').textContent = 'نبذة عن الأكاديمية';
+            document.querySelector('.gallery-link').textContent = 'معرض الصور';
+            document.querySelector('.success-stories-link').textContent = 'قصص النجاح'; // تغيير النص في الرابط
+            document.querySelector('.contact-heading').textContent = 'التواصل';
+            document.querySelector('.contact-text').textContent = 'للتواصل مع أكاديمية FIRST ACADEMY:';
+            document.querySelector('.about-link').textContent = 'نبذة عن الأكاديمية';
+            document.querySelector('.contact-link').textContent = 'التواصل';
 
-                // إخفاء النص الإنجليزي واظهار النص العربي
-                document.getElementById("about-text-ar").style.display = "block";
-                document.getElementById("about-text-en").style.display = "none";
-            }
+            // إخفاء النص الإنجليزي واظهار النص العربي
+            document.getElementById("about-text-ar").style.display = "block";
+            document.getElementById("about-text-en").style.display = "none";
         }
-    </script>
+    }
+</script>
 </body>
 </html>
